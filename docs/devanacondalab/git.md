@@ -24,3 +24,7 @@ hint: (e.g., 'git pull ...') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 vscode ➜ /workspaces/DevAnacondaLAB (main) $ 
 ```
+
+### **NOTE**
+
+Therefor , You need to know how to Develop the scripts ; within the Docker container or outside Docker Container but Inside the Project LAB which connected to GitHub Repository also, or you can connect both the Container and the Project to the same GitHub Repository (Check this solution).
