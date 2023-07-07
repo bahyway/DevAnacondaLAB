@@ -14,3 +14,5 @@ Use `ifconfig` from the terminal on Docker container of the Dev Container to sho
 * Password : postgres
 * Username : postgres
 * Databse name : postgres
+
+<figure><img src="../.gitbook/assets/02-connection-parameters--to-postgresql-database-from-vscode.png" alt=""><figcaption></figcaption></figure>
