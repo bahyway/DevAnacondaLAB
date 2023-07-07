@@ -8,6 +8,8 @@ How to Connect to the Database in the Container after the Creation of Dev Contai
 
 Use `ifconfig` from the terminal on Docker container of the Dev Container to show the Container ip address, use this in the connection screen to PostgreSQL Database
 
+<figure><img src="../.gitbook/assets/04-ifconfig-command-in-docker-container.png" alt=""><figcaption></figcaption></figure>
+
 * Connection Name : PostgresCont01
 * Server Type : PostgreSQL
 * Host Ip4 : 171.18.0.2
