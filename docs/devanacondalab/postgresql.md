@@ -33,4 +33,6 @@ Create the First Query just for test:
 SELECT * FROM pg_stat_activity;
 ```
 
-<figure><img src="../.gitbook/assets/06-create-the-first-query-for-postgresql-database.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/06-create-the-first-query-for-postgresql-database.png" alt=""><figcaption><p>Run first Query</p></figcaption></figure>
+
+* You can also save the query results as **JSON**, **CSV** or **Excel**.
