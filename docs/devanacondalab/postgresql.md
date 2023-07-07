@@ -15,4 +15,9 @@ Use `ifconfig` from the terminal on Docker container of the Dev Container to sho
 * Username : postgres
 * Databse name : postgres
 
-<figure><img src="../.gitbook/assets/02-connection-parameters--to-postgresql-database-from-vscode.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/02-connection-parameters--to-postgresql-database-from-vscode.png" alt=""><figcaption><p>Connect to PostgreSQL Database</p></figcaption></figure>
+
+Press on the **`+Connect`** Button , this will show if the connection succeed or not:
+
+<figure><img src="../.gitbook/assets/03-connection-success--to-postgresql-database-from-vscode.png" alt=""><figcaption><p>Connection with PostgreSQL Succeed from VS Code</p></figcaption></figure>
+
