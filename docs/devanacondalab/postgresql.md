@@ -25,4 +25,12 @@ Press on the **`+Connect`** Button , this will show if the connection succeed or
 
 Now you can work with PostgreSQL from VS Code ( the postgres database is now open in vs code ):
 
-<figure><img src="../.gitbook/assets/05-vscode-connected-to-postgresql.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/05-vscode-connected-to-postgresql.png" alt=""><figcaption><p>Check the Postgres Database</p></figcaption></figure>
+
+Create the First Query just for test:
+
+```sql
+SELECT * FROM pg_stat_activity;
+```
+
+<figure><img src="../.gitbook/assets/06-create-the-first-query-for-postgresql-database.png" alt=""><figcaption></figcaption></figure>
