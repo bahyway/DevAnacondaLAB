@@ -12,7 +12,7 @@ Use `ifconfig` from the terminal on Docker container of the Dev Container to sho
 
 * Connection Name : PostgresCont01
 * Server Type : PostgreSQL
-* Host Ip4 : 171.18.0.2
+* Host Ip4 : 172.18.0.2
 * Password : postgres
 * Username : postgres
 * Databse name : postgres
