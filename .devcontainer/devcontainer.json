@@ -1,10 +1,17 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.245.0/containers/python-3-anaconda-postgres
 {
 	"name": "Anaconda (Python 3) & PostgreSQL",
 	"dockerComposeFile": "docker-compose.yml",
+	"service": "app",
 	"workspaceFolder": "/workspace",
+
+	// Configure tool-specific properties.
 	"customizations": {
+		// Configure properties specific to VS Code.
 		"vscode": {
-			"settings": {
+			// Set *default* container specific settings.json values on container create.
+			"settings": { 
 				"python.defaultInterpreterPath": "/opt/conda/bin/python",
 				"python.linting.enabled": true,
 				"python.linting.pylintEnabled": true,
@@ -15,17 +22,22 @@
 				"python.linting.pydocstylePath": "/opt/conda/bin/pydocstyle",
 				"python.linting.pylintPath": "/opt/conda/bin/pylint"
 			},
+			
+			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
 				"ms-python.python",
 				"ms-python.vscode-pylance"
-			],
-			"Volumename": "DevAnacondaLAB-main-d65173aec77f3a570917104bbe39e894",
-			"mounts": [
-				"source=logs,target=/logs",
-				"source=scripts,target=/scripts"
 			]
 		}
 	},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [5432],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "python --version",
+
+	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "vscode",
 	"features": {
 		"docker-in-docker": "latest",
