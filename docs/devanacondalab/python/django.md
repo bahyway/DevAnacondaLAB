@@ -11,5 +11,5 @@ Check these Links:
 * [**Django Tutorial in Visual Studio Code**](https://code.visualstudio.com/docs/python/tutorial-django)
 {% endhint %}
 
-
+### &#x20;<a href="#_create-a-python-project" id="_create-a-python-project"></a>
 
