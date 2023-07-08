@@ -1,0 +1,18 @@
+# default conda env
+$  conda info | egrep "conda version|active environment"
+     active environment : None
+          conda version : 23.5.0
+
+# activate new env to prove that it works, run new zsh terminal
+$ conda activate py310
+(base) vscode ➜ /workspaces/DevAnacondaLAB (main) $ conda info | egrep "conda version|active environment"
+     active environment : base
+          conda version : 23.5.0
+
+# run from the activated py310 new environment:
+(py310) vscode ➜ /workspaces/DevAnacondaLAB (main) $ conda info | egrep "conda version|active environment"
+     active environment : py310
+          conda version : 23.5.0
+
+# revert back to my original conda env
+$ conda activate base 
