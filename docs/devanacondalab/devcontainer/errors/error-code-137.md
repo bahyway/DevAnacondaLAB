@@ -12,6 +12,10 @@ If you encountered theis Error , then this means that there is no sufficient Mem
 
 1. Change the  `.wslconfig` file and add the following to it:
 
+{% hint style="success" %}
+Check this Link: [**Advanced settings configuration in WSL**](https://learn.microsoft.com/en-us/windows/wsl/wsl-config#configure-global-options-with-wslconfig)
+{% endhint %}
+
 ```
 # Settings apply across all Linux distros running on WSL 2
 [wsl2]
@@ -46,4 +50,4 @@ nestedVirtualization=false
 debugConsole=true
 ```
 
-2. If the first solution does not work , do the second solution and this is by removing all related images , container connected to this Dev Container, and restart the process from the beginning.&#x20;
+2. <mark style="background-color:green;">**Do This**</mark> : If the first solution does not work , do the second solution and this is by removing all related images , container connected to this Dev Container, and restart the process from the beginning.&#x20;
