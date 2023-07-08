@@ -1,6 +1,13 @@
 version: '3.8'
 
 services:
+  image:
+    deploy:
+      resources:
+        limits:
+          memory: 50M
+        reservations:
+          memory: 20M
   app:
     build:
       context: ..
@@ -9,17 +16,16 @@ services:
         # Optional Node.js version to install
         NODE_VERSION: "lts/*"
     env_file:
-        - .env
+      - .env
 
     volumes:
-      - ..:/workspace:cached  
+      - ..:/workspace:cached
 
     # Overrides default command so things don't shut down after the process ends.
     command: sleep infinity
 
     # Runs app on the same network as the database container, allows "forwardPorts" in devcontainer.json function.
     network_mode: service:db
-
     # Uncomment the next line to use a non-root user for all processes.
     # user: vscode
 
@@ -32,8 +38,7 @@ services:
     volumes:
       - postgres-data:/var/lib/postgresql/data
     env_file:
-        - .env
-
+      - .env
     # Add "forwardPorts": ["5432"] to **devcontainer.json** to forward PostgreSQL locally.
     # (Adding the "ports" property to this file will not forward from a Codespace.)
 
