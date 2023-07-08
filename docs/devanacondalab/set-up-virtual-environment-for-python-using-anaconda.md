@@ -18,6 +18,12 @@ conda -V
 conda update conda
 ```
 
+**Check  conda version**
+
+```bash
+conda info | egrep "conda version|active environment"
+```
+
 **Step 2: Set up the virtual environment**
 
 *   Type conda search “
@@ -65,14 +71,14 @@ To initialize shell from a list of shells especially for the running of conda co
 
 <figure><img src="../.gitbook/assets/10_initialize-conda-shell-first.png" alt=""><figcaption><p>The list of existing Shell types</p></figcaption></figure>
 
-Use B`ash` or ZSH shell On **LINUX** for conda:
+Use `Bash` or `ZSH` shell On **LINUX** for conda:
 
 <figure><img src="../.gitbook/assets/11_inintial-bash-shell-for-conda.png" alt=""><figcaption><p>Use Bash or ZSH Shell</p></figcaption></figure>
 
 {% hint style="success" %}
 To activate the new environment py310, open new Bash or ZSH Terminal and run the command:
 
-$ conda activate py310
+$ **conda activate py310**
 {% endhint %}
 
 <figure><img src="../.gitbook/assets/13_activate-conda-on-the-new-zsh-shell-(terminal).png" alt=""><figcaption></figcaption></figure>
@@ -87,8 +93,14 @@ conda init --help
 
 **Then Activate.**
 
-To list all environment created on this docker container , use this conda command:
+* To list all environment created on this docker container , use this conda command:
 
 ```bash
 conda info --envs
+```
+
+* To Install Any new packages in the already created virtual environment , run the following command:
+
+```bash
+conda install -n yourenvname package
 ```
